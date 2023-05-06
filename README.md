@@ -8,3 +8,5 @@ corionalus_encoder2.m: This econder is similar to the first one, but has the add
 
 
 After testing both of these methods, I found that both methods had an entropy difference on the same order of magnitude, though the second encoder/decoder method was slightly more efficient. Both were very close to the theoretical entropy value, much more so than regular arithmetic coding, so I would say that both encoding methods are fairly convenient. Note that in both cases I stuck with k=2, since it allowed for the code to run faster then higher sizes of states. I also limited the iterations of hmmtrain, and I would expect increasing said iterations would add efficiency to the second encoder.
+
+In this github I included the provided cicero and script1 methods detailing the encoding of the HMM. In the coriolanus_encoder1.m and coriolanus_encoder2.m files, I commented in places where I made significant changes, such as altering the count number in decoding states when it (rarely) defaults to zero. 
